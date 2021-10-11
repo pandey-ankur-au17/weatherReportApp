@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    padding: 50px;
+    background-color: aliceblue;
+    height: 90vh;
+    width: 100wv;
+}
+
+.main{
+    height: 80vh;
+    width: 80wv;
+    padding:10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(213, 216, 216);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.wetherbox{
+
+    height: 400px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+.condition{
+    height: 100px;
+    width: 100px;
+    border: 1px solid ;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+
+.details {
+    text-align: center;
+}
+.temp{
+    text-align: center;
+}
+
+.wave1{
+    height: 300px;
+    width: 300px;
+    border: 1px solid;
+    position: absolute;
+    margin-top: 180px;
+
+
+}
+
+.wave2{
+    height: 320px;
+    width: 320px;
+    border: 1px solid;
+    position: absolute;
+    margin-top: 180px;
+
+}
+
+.wave3{
+    height: 340px;
+    width: 340px;
+    border: 1px solid;
+    position: absolute;
+    margin-top: 180px;
+
+}
+
+.rotate-center {
+	-webkit-animation: rotate-center 0.01s linear infinite forwards;
+	        animation: rotate-center 0.01s linear infinite forwards;
+}
