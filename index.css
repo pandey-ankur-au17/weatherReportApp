@@ -25,7 +25,7 @@
 }
 
 .wetherbox{
-
+    background-color: white;
     height: 400px;
     width: 250px;
     border: 1px solid black;
@@ -39,9 +39,14 @@
 .condition{
     height: 100px;
     width: 100px;
-    border: 1px solid ;
     margin-left: 40px;
+    display: flex;
     border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.sunSize{
+    font-size: 50px;
 }
 
 .details {
@@ -51,35 +56,71 @@
     text-align: center;
 }
 
-.wave1{
+.wave3{
     height: 300px;
     width: 300px;
     border: 1px solid;
     position: absolute;
-    margin-top: 180px;
+    margin-top: 150px;
+    /* background-color: aqua; */
+    border-radius: 40%;
+    
+
 
 
 }
 
 .wave2{
-    height: 320px;
-    width: 320px;
+    height: 330px;
+    width: 330px;
     border: 1px solid;
     position: absolute;
-    margin-top: 180px;
+    margin-top: 150px;
+    /* background-color: purple; */
+    border-radius: 40%;
+    
 
 }
 
-.wave3{
+.wave1{
     height: 340px;
     width: 340px;
     border: 1px solid;
     position: absolute;
-    margin-top: 180px;
+    margin-top: 150px;
+    /* background-color: blue; */
+    border-radius: 40%;
+    
 
 }
 
-.rotate-center {
-	-webkit-animation: rotate-center 0.01s linear infinite forwards;
-	        animation: rotate-center 0.01s linear infinite forwards;
-}
+/* .rotate-center{
+    transform: rotate(360deg);
+    transition: .1s;
+    animation: linear infinite forwards;
+
+
+} */
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating .001s linear infinite forwards;
+    -moz-animation: rotating .001s linear infinite forwards;
+    -ms-animation: rotating .001s linear infinite forwards;
+    -o-animation: rotating .001s linear infinite forwards;
+    animation: rotating .001s linear infinite forwards;
+  }
